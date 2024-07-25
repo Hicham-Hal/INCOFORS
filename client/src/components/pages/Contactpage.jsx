@@ -6,7 +6,7 @@ const Contactpage = () => {
         <ul>
             <li>hello</li>
             <li>there</li>
-            <li>sure</li>
+            <li>suree</li>
         </ul>
     </div>
   )
