@@ -15,9 +15,10 @@ const FoSection = () => {
             [id]: !prevState[id]
         }));
     };
-
+    const floor = Math.floor(Math.random() * 10);
     // Limit the number of cards to display to 3
-    const limitedArray = array.slice(0, 3);
+    const limitedArray = array.slice(floor,floor+3);
+    console.log(Math.floor(Math.random() * 10))
 
     return (
         <section className='fourth-section-home'>
