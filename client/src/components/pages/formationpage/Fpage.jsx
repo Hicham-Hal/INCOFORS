@@ -1,24 +1,24 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import dataA from '../../../dataA.json';
+import { array } from '../../../data.js';
 import Footer from '../../footer/Footer.jsx';
 import Navbar from '../../navbar/SecondNavbr.jsx';
 import './pageformation.css';
 const Fpage = () => {
-    const {id} = useParams();
+    const { _id } = useParams();
     const [courseData, setCourseData] = useState(null);
 
     useEffect(() => {
-    const course = dataA.find((item) => item.id === parseInt(id));
-    setCourseData(course);
-    }, [id]);
-
-
+        const course = array.find((item) => item._id === _id);
+        setCourseData(course);
+    }, [_id]);
+    
     if (!courseData) {
         return <div>Loading...</div>;
     }
+    console.log(courseData);
 
-    const { title, category, price, image, description } = courseData;
+    const { name, category, price, level, image, description, schedule } = courseData;
   return (
     <>
         <Navbar/>
@@ -26,16 +26,16 @@ const Fpage = () => {
         <div className='content-solo-page'>
             
         <div className='img-for'>
-            <img src={image} alt="" />
+            <img src={image} alt={name} />
             <div className='title-formation-first'>
-                <h1>{title}</h1>
+                <h1>{name}</h1>
             </div>
         </div>
         <div className='main-section-solo-content'>
         <div className='formation-sts'>
             <div className='formation-info'>
-                <h2>{title}</h2>
-                <h3>Niveau: <span>étudiant</span></h3>
+                <h2>{name}</h2>
+                <h3>Niveau: <span>{level}</span></h3>
                 <h3>catégory: <span>{category}</span></h3>
                 <p className='price-con'>Price: <span>{price}DA</span></p>
             </div>
@@ -51,21 +51,15 @@ const Fpage = () => {
                 <div className='planning-date-time'>
                     <div className='planning-date'>
                         <h3>Day</h3>
-                        <p>Sunday</p>
-                        <p>sunday</p>
-                        <p>sunday</p>
-                        <p>sunday</p>
-                        <p>sunday</p>
-                        <p>sunday</p>
+                        {schedule.map((item, index) => (
+                            <p id='day-time-single' key={index}>{item.day}</p>
+                        ))}
                     </div>
                     <div className='planning-time'>
                         <h3>Time</h3>
-                        <p>08:00 : 11:00</p>
-                        <p>08:00 : 11:00</p>
-                        <p>08:00 : 11:00</p>
-                        <p>08:00 : 11:00</p>
-                        <p>08:00 : 11:00</p>
-                        <p>08:00 : 11:00</p>
+                        {schedule.map((item, index) => (
+                            <p id='day-time-single' key={index}>{item.startTime} - {item.endTime}</p>
+                        ))}
                     </div>
                 </div>
             </div>

@@ -13,7 +13,7 @@ const Pictures = () => {
   const [activeCategory, setActiveCategory] = useState('Show All');
 
   const closePicture = () => {
-    setIsClose(!isClose);
+    setIsClose(true);
   };
 
   const handleImageClick = (img) => {
@@ -29,7 +29,7 @@ const Pictures = () => {
 
   return (
     <div className="all-picture-page">
-      <SecondNavbar />
+      {isClose && <SecondNavbar />}
       <Header filterItems={filterItems} activeCategory={activeCategory}/>
       <div className="page-main-img">
         <div className="images-str">

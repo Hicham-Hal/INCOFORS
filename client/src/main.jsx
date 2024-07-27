@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Inscription from './components/inscription/Inscription';
+import 'react-toastify/dist/ReactToastify.css';
 import Fpage from './components/pages/formationpage/Fpage';
+import For1 from './components/pages/formations page/everyformationpage/formation1/For1';
 import For2 from './components/pages/formations page/everyformationpage/formation2/For2';
 import For3 from './components/pages/formations page/everyformationpage/formation3/For3';
 import For4 from './components/pages/formations page/everyformationpage/formation4/For4';
@@ -12,21 +13,14 @@ import Nformation from './components/pages/homeDashboard/add formation/Nformatio
 import InscriptionDash from './components/pages/homeDashboard/inscription/InscriptionDash';
 import PVadd from './components/pages/homeDashboard/photovideo/PVadd';
 import Home from './components/pages/homeDashboard/statistiques/Home';
-import Register from './components/pages/Register';
-import Login from './components/pages/Login';
 import Homepage from './components/pages/homepage/Homepage';
+import Login, { action as LoginAction } from './components/pages/Login';
+import Register, { action as registerAction } from './components/pages/Register';
+import Signin from './components/Sign/sign in/Signin';
+import Signup from './components/Sign/sign up/Signup';
 import { AppProvider } from './context';
-import customFetch from './utils/customFetch';
 import './index.css';
-import 'react-toastify/dist/ReactToastify.css';
-import { ToastContainer } from 'react-toastify';
-import { action as registerAction } from './components/pages/Register';
-import { action as LoginAction } from './components/pages/Login';
-// async function main(){
-//   const response=await customFetch('/test')
-//   console.log(response.data.msg)
-//  }
-//  main()
+
 
 const router = createBrowserRouter([
 
@@ -34,25 +28,32 @@ const router = createBrowserRouter([
     path:'/contact',
     element: <InscriptionDash/>
   },
-
   {
-    path: '/galeries',
+    path: '/pictures',
     element: <Pictures/>
   },
+  // {
+  //   path: '/videos',
+  //   element: <Video/>
+  // },
   {
-    path: '/formations/course1',
-    element: <Formation />,
+    path: '/formations',
+    element: <Formation/>
   },
   {
-    path: '/formations/course2',
+    path: '/formations/élève',
+    element: <For1/>,
+  },
+  {
+    path: '/formations/étudiant',
     element: <For2/>
   },
   {
-    path: '/formations/course3',
+    path: '/formations/professionnel',
     element: <For3/>
   },
   {
-    path: '/formations/course4',
+    path: '/formations/doctorat',
     element: <For4/>
   },
   {
@@ -69,11 +70,11 @@ const router = createBrowserRouter([
   },
 
   {
-    path: '/inscriptions',
-    element: <Inscription/>
+    path: '/sign-in',
+    element: <Signin/>
   },
   {
-    path: '/formation/course/:id',
+    path: '/formation/course/:_id',
     element: <Fpage/>
   },
   {
@@ -82,15 +83,19 @@ const router = createBrowserRouter([
   },
   {
     path: '/ajouteformation',
-    element: <Nformation/>,
+    element: <Nformation/>
   },
   {
-    path:'/register',
+    path: '/Sign-up',
+    element: <Signup/>
+  },
+  {
+    path:'/registers',
     element:<Register/>,
     action:registerAction,
   },
   {
-    path:'/login',
+    path:'/login  ',
     element:<Login/>,
     action:LoginAction,
   },
@@ -104,6 +109,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <AppProvider>
       <RouterProvider router={router} />
     </AppProvider>
-    <ToastContainer position='top-center'/>
   </React.StrictMode>
 );

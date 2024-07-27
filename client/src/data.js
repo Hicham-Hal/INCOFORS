@@ -45,44 +45,13 @@ export const courses=[
         price: 12000,
     }
 ]
-export const category =[
-    {
-        id: nanoid(),
-        category: 'physique',
-    },
-    {
-        id: nanoid(),
-        category: 'informatique',
-    },
-    {
-        id: nanoid(),
-        category: 'math',
-    },
-    {
-        id: nanoid(),
-        category: 'architect',
-    },
-    {
-        id: nanoid(),
-        category: 'electronics',
-    },
-    {
-        id: nanoid(),
-        category: 'electricity',
-    },
-    {
-        id: nanoid(),
-        category: 'médcine',
-    },
-    {
-        id: nanoid(),
-        category: 'commerce',
-    },
-    {
-        id: nanoid(),
-        category: 'biology',
-    },
-
+export const videos = [
+  {
+    src: 'https://www.youtube.com/watch?v=ly3m6mv5qvg&t=30811s',
+  },
+  {
+    src: 'https://www.youtube.com/watch?v=HeQTJE99OXo',
+  }
 ]
 export const data = [
     {
@@ -618,4 +587,674 @@ export const studients=[
     username: "halouane",
     email: "halouanehicham@gmail.com"
   }
+]
+export const array = [
+  {
+    _id: 'bsfgbsnfgvg',
+    category:"informatique",
+    description:"descreption....",
+    image:"https://fr.freepik.com/photos-premium/voyante-coup-smiley-etudiant-etudier-ordinateur-portable_6355638.htm#fromView=search&page=1&position=6&uuid=047d9003-3db8-44a4-a7e9-238201485eda",
+    level:"etudient",
+    name:"javascript",
+    schedule:[
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"Sunday",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"monday",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"tus",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"we",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"th",
+        startTime:"14:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fege8fa46",
+        day:"th",
+        startTime:"14:33",
+        endTime:"12:35",
+      },
+
+    ],
+    updatedAt:"2025-02-21T05:31:22.000Z",
+    createdAt:"2025-02-21T05:31:22.000Z",
+
+  },
+  {
+    _id: 'sfbdgbsdgb',
+    category:"informatique",
+    description:"descreption....",
+    image:"",
+    level:"etudiente",
+    name:"javascript",
+    schedule:[
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"Sunday",
+        startTime:"13:40",
+        endTime:"14:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"monday",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"tus",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"we",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"th",
+        startTime:"14:33",
+        endTime:"12:35",
+      },
+
+    ],
+    updatedAt:"2025-02-21T05:31:22.000Z",
+    createdAt:"2025-02-21T05:31:22.000Z",
+
+  },
+  {
+    _id: 'fghdtyjt',
+    category:"informatique",
+    description:"descreption....",
+    image:"src of image",
+    level:"etudient",
+    name:"javascript",
+    price: 1200,
+    schedule:[
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"Sunday",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"monday",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"tus",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"we",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"th",
+        startTime:"14:33",
+        endTime:"12:35",
+      },
+
+    ],
+    updatedAt:"2025-02-21T05:31:22.000Z",
+    createdAt:"2025-02-21T05:31:22.000Z",
+
+  },
+  {
+    _id: 'ndnhdfjrt',
+    category:"informatique",
+    description:"descreption....",
+    image:"src of image",
+    level:"etudient",
+    name:"javascript",
+    schedule:[
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"Sunday",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"monday",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"tus",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"we",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"th",
+        startTime:"14:33",
+        endTime:"12:35",
+      },
+
+    ],
+    updatedAt:"2025-02-21T05:31:22.000Z",
+    createdAt:"2025-02-21T05:31:22.000Z",
+
+  },
+  {
+    _id: 'bsgnfgdchgsf',
+    category:"informatique",
+    description:"descreption....",
+    image:"src of image",
+    level:"etudient",
+    name:"javascript",
+    schedule:[
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"Sunday",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"monday",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"tus",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"we",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"th",
+        startTime:"14:33",
+        endTime:"12:35",
+      },
+
+    ],
+    updatedAt:"2025-02-21T05:31:22.000Z",
+    createdAt:"2025-02-21T05:31:22.000Z",
+
+  },
+  {
+    _id: 'bsdfvsdwfvsdf',
+    category:"informatique",
+    description:"descreption....",
+    image:"src of image",
+    level:"etudient",
+    name:"javascript",
+    schedule:[
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"Sunday",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"monday",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"tus",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"we",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"th",
+        startTime:"14:33",
+        endTime:"12:35",
+      },
+
+    ],
+    updatedAt:"2025-02-21T05:31:22.000Z",
+    createdAt:"2025-02-21T05:31:22.000Z",
+
+  },
+  {
+    _id: 'bsdfwfqfqcxwchndfhd',
+    category:"informatique",
+    description:"descreption....",
+    image:"src of image",
+    level:"etudient",
+    name:"javascript",
+    schedule:[
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"Sunday",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"monday",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"tus",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"we",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"th",
+        startTime:"14:33",
+        endTime:"12:35",
+      },
+
+    ],
+    updatedAt:"2025-02-21T05:31:22.000Z",
+    createdAt:"2025-02-21T05:31:22.000Z",
+
+  },
+  {
+    _id: 'bdfbdfqffbdxvgdf',
+    category:"informatique",
+    description:"descreption....",
+    image:"src of image",
+    level:"etudient",
+    name:"javascript",
+    schedule:[
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"Sunday",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"monday",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"tus",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"we",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"th",
+        startTime:"14:33",
+        endTime:"12:35",
+      },
+
+    ],
+    updatedAt:"2025-02-21T05:31:22.000Z",
+    createdAt:"2025-02-21T05:31:22.000Z",
+
+  },
+  {
+    _id: 'bgsdsdfqfv,yutff',
+    category:"informatique",
+    description:"descreption....",
+    image:"src of image",
+    level:"etudient",
+    name:"javascript",
+    schedule:[
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"Sunday",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"monday",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"tus",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"we",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"th",
+        startTime:"14:33",
+        endTime:"12:35",
+      },
+
+    ],
+    updatedAt:"2025-02-21T05:31:22.000Z",
+    createdAt:"2025-02-21T05:31:22.000Z",
+
+  },
+  {
+    _id: 'sdfbdfvbsfq<ikgyujf',
+    category:"informatique",
+    description:"descreption....",
+    image:"src of image",
+    level:"professionelle",
+    name:"javascript",
+    schedule:[
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"Sunday",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"monday",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"tus",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"we",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"th",
+        startTime:"14:33",
+        endTime:"12:35",
+      },
+
+    ],
+    updatedAt:"2025-02-21T05:31:22.000Z",
+    createdAt:"2025-02-21T05:31:22.000Z",
+
+  },
+  {
+    _id: 'gbsdgbsdghtsgbdswgfjd',
+    category:"informatique",
+    description:"descreption....",
+    image:"src of image",
+    level:"doctorat",
+    name:"php",
+    schedule:[
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"Sunday",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"monday",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"tus",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"we",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"th",
+        startTime:"14:33",
+        endTime:"12:35",
+      },
+
+    ],
+    updatedAt:"2025-02-21T05:31:22.000Z",
+    createdAt:"2025-02-21T05:31:22.000Z",
+
+  },
+  {
+    _id: 'bsfgbsnfgvgdvzsef',
+    category:"informatique",
+    description:"descreption....",
+    image:"../public/images/fW.png",
+    level:"doctorat",
+    name:"javascript",
+    schedule:[
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"Sunday",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"monday",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"tus",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"we",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"th",
+        startTime:"14:33",
+        endTime:"12:35",
+      },
+
+    ],
+    updatedAt:"2025-02-21T05:31:22.000Z",
+    createdAt:"2025-02-21T05:31:22.000Z",
+
+  },
+  {
+    _id: 'sfbdgbsdgbdhrt',
+    category:"informatique",
+    description:"descreption....",
+    image:"",
+    level:"professionelle",
+    name:"javascript",
+    schedule:[
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"Sunday",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"monday",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"tus",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"we",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"th",
+        startTime:"14:33",
+        endTime:"12:35",
+      },
+
+    ],
+    updatedAt:"2025-02-21T05:31:22.000Z",
+    createdAt:"2025-02-21T05:31:22.000Z",
+
+  },
+  {
+    _id: 'fghdtyjtiymoik',
+    category:"physic",
+    description:"descreption....",
+    image:"src of image",
+    level:"eleve",
+    name:"earth",
+    schedule:[
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"Sunday",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"monday",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"tus",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"we",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"th",
+        startTime:"14:33",
+        endTime:"12:35",
+      },
+
+    ],
+    updatedAt:"2025-02-21T05:31:22.000Z",
+    createdAt:"2025-02-21T05:31:22.000Z",
+
+  },
+  {
+    _id: 'ndnhdfjrt,yku',
+    category:"math",
+    description:"descreption....",
+    image:"src of image",
+    level:"eleve",
+    name:"next js",
+    schedule:[
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"Sunday",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"monday",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"tus",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"we",
+        startTime:"13:33",
+        endTime:"12:35",
+      },
+      {
+        _id:"66a3fa237c21b3211fe8fa46",
+        day:"th",
+        startTime:"14:33",
+        endTime:"12:35",
+      },
+
+    ],
+    updatedAt:"2025-02-21T05:31:22.000Z",
+    createdAt:"2025-02-21T05:31:22.000Z",
+
+  },
 ]

@@ -23,8 +23,15 @@
 .card-complet:hover{
     scale: 1.01;
 }
-.card-complet img{
+.img-card-demi-complete{
     height: 50%;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+}
+.card-complet img{
+    height: 100%;
     width: 100%;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -41,7 +48,7 @@
     width: fit-content;
 }
 .demi-carte h3{
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 5px;
     max-width: 100%;
 }

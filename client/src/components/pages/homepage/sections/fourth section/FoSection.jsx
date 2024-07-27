@@ -1,10 +1,12 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { NavLink } from 'react-router-dom';
 import { courses } from '../../../../../data';
+import '../../../../../I18next';
 import image from '../../../../../images/fW.png';
 import './fourthSection.css';
 const FoSection = () => {
-
+    const {t} = useTranslation();
     const [readMoreState, setReadMoreState] = useState({});
 
         const toggleReadMore = (id) => {
@@ -19,11 +21,11 @@ const FoSection = () => {
         <div className='content-section-four'>
             <div className='header-content-section-four'>
                 <div className='section-four-title'>
-                    <h2>Formations les plus demandés</h2>
+                    <h2>{t('tit4')}</h2>
                 </div>
                 <div className='section-four-link'>
                     <h4>
-                        <NavLink to={'/formations'}>Voir tous</NavLink>
+                        <NavLink to={'/formations'}>{t('tout    ')}</NavLink>
                     </h4>
                 </div>
             </div>
@@ -63,7 +65,7 @@ const FoSection = () => {
                                 <p className='number-ins-section-four'>{ninscr} inscriptions</p>
                                 <div className='bottom-card-section-four'>
                                     <h4>{price}DA</h4>
-                                    <button><NavLink to={"/inscriptions"}>S'inscrir</NavLink></button>
+                                    <button><NavLink to={`/formation/course/${id}`}>view</NavLink></button>
                                 </div>
                             </div>
                         </div>

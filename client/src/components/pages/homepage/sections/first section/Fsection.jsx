@@ -1,6 +1,5 @@
 
 import { useTranslation } from "react-i18next";
-import ChangLanguages from "../../../../../ChangLanguages";
 import '../../../../../I18next';
 import Navbar from "../../../../navbar/Navbar";
 import './fsection.css';
@@ -9,7 +8,6 @@ const Fsection = () => {
   return (
     <div className="all-in-one">
       <Navbar/>
-      <ChangLanguages/>
     <section className='first f-section'>
       <div className='section-first-content'>
         <div className='main-title'>

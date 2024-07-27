@@ -12,9 +12,9 @@ const S_section = () => {
                 <img style={{height:"500px" , width:"500px"}} src={image} alt=""/>
             </div>
             <div className='content-section-two'>
-                <h2>{t ("s2title")}</h2>
+                <h2>incofors</h2>
                 <p>
-                INCOFORS est un institut spécialisé en recherche, innovation et amélioration des performances industrielles, offrant des solutions technologiques avancées et des services de conseil pour optimiser les opérations et améliorer la qualité des produits et services de ses clients.
+                  {t('s2content')}
                 </p>
                 <NavLink to={'/formations'} ><button>More </button></NavLink>
             </div>

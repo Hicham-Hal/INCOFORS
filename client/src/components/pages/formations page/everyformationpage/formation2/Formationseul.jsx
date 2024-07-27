@@ -1,11 +1,11 @@
-import { useRef, useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { Link } from 'react-router-dom';
-import { array } from '../../../../data';
-import '../Category/category.css';
-import './formation.css';
+import { array } from '../../../../../data';
+import '../../Category/category.css';
+import '../../formation.css';
 
-const FormationAll = () => {
+const Formationseul = () => {
   const tabsRef = useRef(null);
   const [activeCategory, setActiveCategory] = useState('Show All');
   const [dataa, setDataa] = useState(array);
@@ -36,8 +36,11 @@ const FormationAll = () => {
     }));
   };
 
-  // Extract unique categories from array
-  const uniqueCategories = Array.from(new Set(array.map(item => item.category)));
+  // Filter data based on level
+  const filteredData = dataa.filter(item => item.level === 'eleve');
+
+  // Extract unique categories from filteredData
+  const uniqueCategories = Array.from(new Set(filteredData.map(item => item.category)));
   const isSliderActive = uniqueCategories.length >= 7;
 
   return (
@@ -69,7 +72,7 @@ const FormationAll = () => {
       </section>
       <div className="formations-ever-section">
         <div className="formations-all-order">
-          {dataa.map((item) => {
+          {filteredData.map((item) => {
             const { _id, level, name, price, category, image } = item;
             const isReadMore = readMoreState[_id];
 
@@ -119,6 +122,6 @@ const FormationAll = () => {
       </div>
     </section>
   );
-}
+};
 
-export default FormationAll;
+export default Formationseul;

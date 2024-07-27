@@ -10,9 +10,12 @@
     width: 100%;
 }
 .img-for{
+    margin-top: 70px;
     height: 360px;
     width: 100%;
     position: relative;
+    background-color: rgb(0, 0, 0);
+    filter: brightness(30%);
 }
 .img-for img{
     width: 100%;
@@ -52,16 +55,21 @@
     background-image: linear-gradient(90deg, rgba(75,52,195,1) 0%, rgba(162,121,249,1) 100%);
     -webkit-background-clip: text;
     color: transparent;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 500;
 }
 .formation-info h3{
     margin-top: 20px;
-    font-size: 23px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.formation-info span{
+    font-weight: 500;
+    text-transform: capitalize;
 }
 
 .price-con{
-    margin-top: 30px;
+    margin-top: 50px;
     font-size: 25px;
     padding: 15px 25px;
     background: rgb(145,114,239);
@@ -71,20 +79,21 @@
     color: white;
 }
 .formation-desc h2{
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 500;
 }
 
 .formation-desc p{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     margin-top: 20px;
     line-height: 27px;
 }
 .planning{
-    max-width: 80%;
+    max-width: 100%;
     margin: auto;
     margin-top: 100px;
+    margin-left: 80px;
 }
 .planning h2{
     font-size: 24px;
@@ -92,8 +101,10 @@
     margin-bottom: 15px;
 }
 .planning-date-time{
-    max-width: 95%;
+    width: auto;
     margin: auto;
+    margin-left: 40px;
+    margin-top: 50px;
 
 }
 
@@ -115,7 +126,7 @@
 }
 .planning-date{
     display: grid;
-    grid-template-columns: repeat(auto-fill, 14.28%);
+    grid-template-columns: repeat(auto-fill, 12.5%);
     align-items: center;
     text-align: center;
     background-color: #F4F4F4;
@@ -127,8 +138,11 @@
     margin-top: 15px;
     padding: 10px 15px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, 14.28%);
+    grid-template-columns: repeat(auto-fill, 12.5%);
     align-items: center;
     text-align: center;
     background-color: #F4F4F4;
+}
+#day-time-single{
+    margin: 0 10px;
 }

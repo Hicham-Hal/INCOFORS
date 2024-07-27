@@ -2,7 +2,7 @@ import React from 'react';
 import Footer from "../../../../footer/Footer";
 import SecondNavbar from "../../../../navbar/SecondNavbr";
 import '../../formation.css';
-import FormationAll from "../../FormationAll.jsx/FormationAll";
+import Formationseul from './Formationseul';
 import Header from './Header';
 
 export const Formation = () => {
@@ -10,7 +10,7 @@ export const Formation = () => {
     <div className="formation-main-main">
       <SecondNavbar/>
       <Header/>
-      <FormationAll />
+      <Formationseul />
       <Footer/>
     </div>
   )
