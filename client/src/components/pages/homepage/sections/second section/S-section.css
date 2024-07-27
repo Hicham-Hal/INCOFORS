@@ -42,6 +42,10 @@
     font-size: 18px;
     font-weight: 500;
     color: white;
+    transition: .3s ease-in-out;
+}
+.content-section-two button:hover{
+    transform: scale(0.9);
 }
 .content-section-two button a{
     font-size: 18px;
